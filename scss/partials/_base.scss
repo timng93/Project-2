@@ -1,10 +1,72 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-Light.eot");
+  src: url("../../assets/fonts/OpenSans-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../../assets/fonts/OpenSans-Light.woff") format("woff"),
+    url("../../fonts/OpenSans-Light.ttf") format("truetype"),
+    url("../../fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  padding: 5%;
   @include tablet {
-    flex-direction: row;
+    align-items: center;
+  }
+  @include desktop {
     justify-content: flex-start;
+  }
+}
+.img,
+.selector {
+  display: block;
+  padding: 3%;
+}
+
+.top-stories {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    max-height: 900px;
+    max-width: 700px;
+    align-self: center;
+    @include tablet {
+      width: 50%;
+    }
+    @include desktop {
+      width: 25%;
+    }
+  }
+}
+
+footer {
+  color: #c2c2c2;
+  text-align: center;
+  @include desktop {
+    text-align: left;
   }
 }

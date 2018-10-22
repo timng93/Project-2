@@ -8,7 +8,7 @@
   <title>Gulp SCSS ES6 Starter</title>
 
   <!-- My Style, note you can use style.min.css for Production -->
-  <link rel="stylesheet" href="./build/css/style.css">
+  <link rel="stylesheet" href="./build/css/style.min.css">
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- My Script -->
@@ -17,23 +17,46 @@
 
 <body>
   <div class="container">
-    <img src="assets/images/nyt-logo.svg" alt="nyt-logo">
-    <div class="selector">
-      <h1> Choose a section: </h1>
-      <button>Home</button>
+    <header class="header">
+      <div class="img">
+        <img src="assets/images/nyt-logo.svg" alt="nyt-logo">
+      </div>
+      <form class="form">
+        <div class="selector">
+          <h1> Choose a section: </h1>
+          <select name="sections" id="selector">
+            <option value> Sections...</option>
+            <option value="home">Home</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="fashion">Fashion</option>
+          </select>
+
+        </div>
+      </form>
+
+    </header>
+
+
+
+    <div class="top-stories">
+      <ul>
+
+      </ul>
+
     </div>
-  </div>
-  <div class="top-stories">
-    <ul>
+    <footer class="footer">
+      <div class="copyright">
+        <h2>
+          &copy; Copyright 2019 INSTANEWS
+        </h2>
+      </div>
+      
+    </footer>
 
-    </ul>
-
   </div>
-  <footer>
-    <h2>
-      &copy; Copyright 2019 INSTANEWSß
-    </h2>
-  </footer>
 
 
 </body>

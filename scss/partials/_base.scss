@@ -1,3 +1,136 @@
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Global Styles*/
+
 @font-face {
   font-family: "Open Sans";
   src: url("../../assets/fonts/OpenSans-Light.eot");
@@ -23,8 +156,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .header {
@@ -33,7 +169,7 @@ body {
   align-content: center;
   justify-content: center;
   height: 100%;
-  padding: 5%;
+  padding: 4rem;
   @include tablet {
     align-items: center;
   }
@@ -41,19 +177,59 @@ body {
     justify-content: flex-start;
   }
 }
+
 .img,
 .selector {
+  padding: 2rem;
   display: block;
-  padding: 3%;
 }
 
-.top-stories {
+.small-header {
+  padding: 1rem;
+  justify-content: flex-start;
+  .img {
+    width: 30%;
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+  }
+}
+
+.selector h1 {
+  margin: 6px;
+}
+
+/*.loader {
+  position: relative;
+  left: 25rem;
+  top: 30px;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/ajax-loader.gif") center no-repeat;}*/
+
+.top-stories ul {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-end;
+  margin: 0 auto;
+
+  .stories {
+    background: #211f1f;
+    position: absolute;
+    bottom: 0;
+  }
+
   li {
-    max-height: 900px;
-    max-width: 700px;
-    align-self: center;
+    a {
+      height: 300px;
+      display: block;
+    }
+    // min-height: 340px;
+    width: 400px;
+    position: relative;
+    list-style: none;
+
     @include tablet {
       width: 50%;
     }
@@ -66,6 +242,8 @@ body {
 footer {
   color: #c2c2c2;
   text-align: center;
+  font-size: 0.9rem;
+  padding: 2%;
   @include desktop {
     text-align: left;
   }

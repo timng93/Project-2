@@ -1,135 +1,4 @@
-/*CSS Reset*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*Global Styles*/
+//Global Styles
 
 @font-face {
   font-family: "Open Sans";
@@ -145,8 +14,8 @@ table {
 }
 
 body {
-  background-color: black;
-  color: #ffffff;
+  background-color: #000000;
+  color: $primary-color;
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
 }
@@ -155,20 +24,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: $absolute-sizing;
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: $primary-color;
 }
 
+//Header
 .header {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  height: 100%;
+  height: $absolute-sizing;
   padding: 4rem;
   @include tablet {
     align-items: center;
@@ -185,28 +55,45 @@ a {
 }
 
 .small-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   padding: 1rem;
-  justify-content: flex-start;
+  @include tablet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
+    flex-flow: row;
+    padding: 1rem;
+    width: 45%;
+  }
   .img {
-    width: 30%;
+    width: 40%;
     img {
-      max-width: 90%;
-      height: auto;
+      width: 80%;
+      height: 50%;
+      @include tablet {
+        max-width: 30%;
+      }
     }
   }
 }
 
 .selector h1 {
-  margin: 6px;
+  margin: 10px;
+}
+//Top Stories
+.loader {
+  position: relative;
 }
 
-/*.loader {
-  position: relative;
-  left: 25rem;
-  top: 30px;
-  width: 100%;
-  height: 100%;
-  background: url("../../assets/images/ajax-loader.gif") center no-repeat;}*/
+.loader img {
+  height: 100px;
+  width: 100px;
+  margin-left: 50%;
+  display: none;
+}
 
 .top-stories ul {
   display: flex;
@@ -218,15 +105,16 @@ a {
     background: #211f1f;
     position: absolute;
     bottom: 0;
+    padding: 7rem;
   }
 
   li {
     a {
-      height: 300px;
+      height: 400px;
       display: block;
     }
-    // min-height: 340px;
-    width: 400px;
+    height: $primary-color;
+    width: $absolute-sizing;
     position: relative;
     list-style: none;
 
@@ -238,7 +126,7 @@ a {
     }
   }
 }
-
+//Footer
 footer {
   color: #c2c2c2;
   text-align: center;

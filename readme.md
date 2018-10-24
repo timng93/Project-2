@@ -8,3 +8,4 @@ New York Times API- API Database
 Visual Studio Code- Code Editor for HTML, CSS and JavaScript
 RED Academy Github- NYTimes API Template
 <h2>Author</h2>
+Tim Nguyen- Red Academy Student

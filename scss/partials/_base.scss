@@ -82,6 +82,7 @@ a {
 
 .selector h1 {
   margin: 10px;
+  font-size: 0.8rem;
 }
 //Top Stories
 .loader {
@@ -105,7 +106,7 @@ a {
     background: #211f1f;
     position: absolute;
     bottom: 0;
-    padding: 7rem;
+    padding: 1rem;
   }
 
   li {
@@ -127,7 +128,7 @@ a {
   }
 }
 //Footer
-footer {
+footer h2 {
   color: #c2c2c2;
   text-align: center;
   font-size: 0.9rem;

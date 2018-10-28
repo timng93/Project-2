@@ -96,6 +96,9 @@ a {
   display: none;
 }
 
+.top-stories {
+  width: 100%;
+}
 .top-stories ul {
   display: flex;
   flex-wrap: wrap;
@@ -103,7 +106,9 @@ a {
   margin: 0 auto;
 
   .stories {
+    //background: #211f1f;
     background: #211f1f;
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6));
     position: absolute;
     bottom: 0;
     padding: 1rem;

@@ -56,6 +56,11 @@ a {
   display: block;
 }
 
+.selector select{
+  position: relative;
+    left: 0.5rem;
+}
+
 .small-header {
   display: flex;
   justify-content: center;
@@ -72,17 +77,26 @@ a {
     padding: 1rem;
     width: 45%;
   }
-  .img {
-    width: 40%;
-    img {
-      width: 80%;
-      height: 50%;
+    .img{
+      text-align: center;
+      min-width: 100%;
       @include tablet {
-        max-width: 30%;
+      min-width: 90%;
+    }
+     @include desktop{
+       min-width: 50%
+     }
+  }
+    img {
+       min-width: 30%;
+       width: 50%;
+      @include tablet {
+        width: 30%;
+      height: 90px;
       }
     }
   }
-}
+
 
 .selector h1 {
   margin: 10px;

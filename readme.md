@@ -5,5 +5,7 @@ This project was done to provide the readers easy access to NYTimes News Section
 HTML file can be viewed on various web broswers. File was test run on Google Chrome.
 <h2>Built with</h2>
 Visual Studio Code- Code Editor for HTML, CSS and JavaScript
+
+
 <h2>Author</h2>
 Tim Nguyen- Red Academy Student

@@ -7,3 +7,5 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+# Ignore node modules
+node_modules/

@@ -1,11 +1,21 @@
+# Instanews
 
-<h1>Project 2</h1>
-This project was done to provide the readers easy access to NYTimes News Section. The top stories of news sections from the NYTimes are displayed.
-<h2>Running the File</h2>
-HTML file can be viewed on various web broswers. File was test run on Google Chrome.
-<h2>Built with</h2>
-Visual Studio Code- Code Editor for HTML, CSS and JavaScript
+## Description
+
+Instanews is a project built by Tim Nguyen, which would provide readers easy access to the New York Times News Section. The top stories from the most popular sections of the New York Times are displayed on the site. 
+
+## Built With
 
 
-<h2>Author</h2>
-Tim Nguyen- Red Academy Student
+### JQuery
+### Google Chrome Developer
+### Visual Studio Code
+### SASS
+### Gulp
+
+## Personal learnings
+
+Throughout this project, I was able to use Gulp. Gulp was quite useful as it automatically managed the data for CSS and JavaScript Files. I was also able to learn how to fetch the data from the New York Times API.
+
+##Author
+Tim Nguyen

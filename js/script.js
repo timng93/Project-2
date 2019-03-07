@@ -9,9 +9,10 @@ $(document).ready(function() {
 
       function getStories(section) {
         $.ajax({
-          url: `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=d28069e91a3c4589b4bc13f58c599967`,
+          url: `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=TCYvuOPGJnGTUt7OxN27cFe80kfMulR2`,
           method: "GET"
         })
+        //TCYvuOPGJnGTUt7OxN27cFe80kfMulR2
 
           .done(function(data) {
             $(".loader img").hide();

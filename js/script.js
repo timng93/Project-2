@@ -8,11 +8,12 @@ $(document).ready(function() {
       getStories(section);
 
       function getStories(section) {
+        const apiKey = "TCYvuOPGJnGTUt7OxN27cFe80kfMulR2";
+        const url = `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${apiKey}`;
         $.ajax({
-          url: `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=TCYvuOPGJnGTUt7OxN27cFe80kfMulR2`,
+          url: url,
           method: "GET"
         })
-        //TCYvuOPGJnGTUt7OxN27cFe80kfMulR2
 
           .done(function(data) {
             $(".loader img").hide();

@@ -30,7 +30,7 @@ $(document).ready(function() {
                 `<li style='background: url(${
                   value.multimedia[4].url
                 });background-size:cover;'><a href=
-                              ${value.url}><div class=stories>
+                              ${value.url} target=”_blank”><div class=stories>
                               ${value.abstract}
                               </div>
                               </a>

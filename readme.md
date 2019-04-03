@@ -1,6 +1,3 @@
-##Author
-Tim Nguyen
-
 # InstaNews
 
 Instanews is a website that provides readers easy access to the most popular stories on the New York Times. The stories are organized by sections as users choose a specific section that they want to see.
@@ -18,8 +15,7 @@ Instanews is a website that provides readers easy access to the most popular sto
 ## Technologies Used
 
 - JQuery
-- Google Chrome Developer
-- Visual Studio Code
+- HTML
 - SASS
 - Gulp
 
